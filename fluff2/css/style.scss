@@ -1,0 +1,43 @@
+div{
+    height: 100px;
+    width: 100px;
+    color: white;
+}
+
+.s1{
+width: 500px;
+height: 500px;
+border: 2px dotted black;
+position: relative;
+left: 20%;
+}
+
+.s2{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border: 2px solid blue;
+    left: 50%;
+}
+
+.boxFixed{
+    background-color: green;
+    position: fixed;
+}
+
+.boxSticky{
+    background-color: black;
+    position: sticky;
+    top: 0;
+}
+
+.boxAbsolute{
+    background-color: blue;
+    position: absolute;
+}
+
+.boxRelative{
+    background-color: red;
+    position: relative;
+    right: 10%
+}

@@ -1,0 +1,61 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+@keyframes beat{
+    0%{transform: scale(0.8);}
+    5%{transform: scale(0.9);}
+    10%{transform: scale(0.8);}
+    15%{transform: scale(1);}
+    50%{transform: scale(0.8);}
+    100%{transform: scale(0.8);}
+}
+.heart1{
+    animation: beat 1.5s infinite;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transform: rotate(45deg);
+
+}
+
+
+.heart1::before, .heart1::after{
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.heart1::before{
+    background-color: red;
+    left: -50px;
+}
+
+.heart1::after{
+    background-color: red;
+    top: -50px;
+}
+
+/*
+.heart2{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: red;
+
+}
+
+.heart3{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+*/
